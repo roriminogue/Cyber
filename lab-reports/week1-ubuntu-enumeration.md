@@ -1,4 +1,4 @@
-markdown# Week 1: Ubuntu Target Enumeration
+## Week 1: Ubuntu Target Enumeration
 
 **Date:** 22/09/2025
 **Target:** Ubuntu 24.04 LTS (192.168.56.20)
@@ -10,11 +10,12 @@ markdown# Week 1: Ubuntu Target Enumeration
 - **Network:** VirtualBox Host-Only Adapter (Isolated)
 
 ## Initial Scan - Fresh Ubuntu
+```
 Nmap 7.95 scan initiated Mon Sep 22 02:56:35 2025 as: /usr/lib/nmap/nmap -sV -sC -O -oN ubuntu-services-scan.txt 192.168.56.20
 Nmap scan report for 192.168.56.20
 Host is up (0.0018s latency).
 Not shown: 998 closed tcp ports (reset)
-
+```
 **Finding:** Default Ubuntu desktop has no exposed services - secure by default!
 
 ## Services Installed
@@ -23,6 +24,7 @@ To create a realistic target environment:
 - Apache2 Web Server (web hosting)
 
 ## Full Service Scan Results
+```
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.14 (Ubuntu Linux; protocol 2.0)
 | ssh-hostkey: 
@@ -31,6 +33,7 @@ PORT   STATE SERVICE VERSION
 80/tcp open  http    Apache httpd 2.4.58 ((Ubuntu))
 |_http-title: Apache2 Ubuntu Default Page: It works
 |_http-server-header: Apache/2.4.58 (Ubuntu)
+```
 
 ## Verification Tests
 - ✅ SSH Login: Successfully authenticated as vboxuser
