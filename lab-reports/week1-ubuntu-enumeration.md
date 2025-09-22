@@ -10,7 +10,7 @@ markdown# Week 1: Ubuntu Target Enumeration
 - **Network:** VirtualBox Host-Only Adapter (Isolated)
 
 ## Initial Scan - Fresh Ubuntu
-# Nmap 7.95 scan initiated Mon Sep 22 02:56:35 2025 as: /usr/lib/nmap/nmap -sV -sC -O -oN ubuntu-services-scan.txt 192.168.56.20
+Nmap 7.95 scan initiated Mon Sep 22 02:56:35 2025 as: /usr/lib/nmap/nmap -sV -sC -O -oN ubuntu-services-scan.txt 192.168.56.20
 Nmap scan report for 192.168.56.20
 Host is up (0.0018s latency).
 Not shown: 998 closed tcp ports (reset)
